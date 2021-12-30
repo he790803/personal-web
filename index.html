@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome CDN -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- 自定義css -->
+    <title>Personal Website</title>
+  </head>
+  <body>
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+    <!-- 漢堡選單 -->
+
+    <header>
+      <a href="#" class="logo"><span> Henry's </span>resume</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+      </nav>
+    </header>
+
+    <!-- sidebar -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <span class="hi">hi here...</span>
+        <h3>i am <span>Henry Tsai</span></h3>
+        <p class="info">我想成為一位前端工程師!</p>
+        <p class="text">
+          雖然求學過程是就讀資訊相關科系，但退伍後則與親戚一同從事餐飲相關的工作，幾經思考後，雖然知道這是一份不簡單的工作，但還是想從事軟體程式相關的行業。
+          目前軟體相關的工作經驗，也只有上一份工作短暫的(5~6個月)成為後端工程師，在前端方面更是沒有任何相關經驗，所以還煩請貴公司，撥空觀看我練習時的作品。
+        </p>
+        <a href="#about" class="btn">about me</a>
+      </div>
+
+      <div class="image">
+        <img src="./images/0002.png" alt="" />
+      </div>
+    </section>
+
+    <!-- home section -->
+    <section class="about" id="about">
+      <h1 class="heading">about <span>me</span></h1>
+
+      <div class="row-1">
+        <div class="image">
+          <img src="./images/0003.png" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>基本資料</h3>
+          <div class="box-container">
+            <div class="box">
+              <p><span>姓名:</span>蔡永翰(Henry)</p>
+              <p><span>連絡電話:</span>0933-152-519</p>
+              <p class="email"><span>電子郵件:</span>he790803@gmail.com</p>
+              <p><span>最高學歷:</span>聖約翰科技大學 資訊與通訊研究所 碩士</p>
+            </div>
+            <!-- <div class="box">
+              <p><span>學習語言:</span>Html.Css.Javascript.Vue</p>
+            </div> -->
+          </div>
+          <h3>工作經歷</h3>
+          <div class="box-container">
+            <div class="work">
+              <p class="title"><span>資訊公司-後端工程師</span>2019/9~2020/2</p>
+              <p>建立資料庫</p>
+              <p>API撰寫與開發</p>
+              <p>功能測試</p>
+              <p>管理後台建置</p>
+              <p class="title"><span>美式漢堡店-外場</span>2015~2018</p>
+              <p>負責餐點介紹</p>
+              <p>活動發想</p>
+              <p>環境整潔</p>
+              <p>與內場討論新餐點開發</p>
+            </div>
+          </div>
+
+          <h1 class="heading"><span>my</span>skills</h1>
+          <div class="row-2">
+            <div class="skills">
+              <div class="progress">
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <p>(flex)</p>
+                <h3>javaScript</h3>
+                <p>(let.const.forEach)</p>
+                <h3>vue</h3>
+                <p>(v-系列)</p>
+                <h3>vueX</h3>
+                <p>(state)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading"><span>my </span>portfolio</h1>
+      <div class="box-container">
+        <div class="box-portfolio">
+          <a class="box-image" href="https://he798003.github.io/pos-system/dist/index.html#/juice">
+            <img src="./images/possystem01.png" />
+          </a>
+          <div class="box-txt">
+            <h3>快點餐吧 POS點餐系統</h3>
+            <div class="box-content">
+              <p>
+                此練習最起初是YT頻道(Alex宅幹嘛)上分享使用VueX-TodoList的範例，在學習後，我將它衍伸成為一個簡單的飲料POS點餐網頁，也透過這樣讓自己更了解VueX的基本應用。
+              </p>
+              <p><span>使用技術:</span>HTML.CSS.JS.Vue.VueX</p>
+              <p><span>學習重點:</span></p>
+              <p>Vue - 多去熟悉Vue最基本的運用與操作</p>
+              <p>VueX - 希望透過此練習，能更加瞭解VueX在管理資料時的運作</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-portfolio">
+          <div class="box-image">
+            <img src="https://picsum.photos/300/100/?random=20" />
+          </div>
+          <div class="box-txt">
+            <h3>Taiwan太好玩! 台灣景點API串接</h3>
+            <div class="box-content">
+              <p>
+                此練習是六角所舉辦的F2E活動(雖然我沒有報名)，使用TDX所提供的API來做一系列的網頁服務，我從中挑選了一個主題來練習。
+              </p>
+              <p><span>使用技術:</span>HTML.CSS.JS</p>
+              <p><span>學習重點:</span></p>
+              <p>
+                API串接與資料處理 - 練習的重點不在於串接本身，而是將資料接回來後，學習怎麼調整或者篩選成我所需要的資料。
+              </p>
+              <p>
+                CSS切版 -
+                藉此練習多去熟悉CSS切版，之後也會繼續找一些常見基礎的版型多做練習，讓自己在處理常見版型時，能盡可能縮短切版花費的時間。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section -->
+    <script src="./js/script.js"></script>
+    <!-- 自定義js -->
+  </body>
+</html>
