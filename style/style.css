@@ -352,14 +352,15 @@ section {
 }
 
 .box-portfolio {
-  padding: 5rem 0;
-  /* display: flex; */
+  margin: 5rem 0;
+  display: flex;
+  background-color: rgba(223, 191, 132, 0.39);
 }
 
-.box-portfolio .box-image {
+/* .box-portfolio .box-image {
   margin-right: 1rem;
   float: left;
-}
+} */
 /* .box-portfolio:nth-child(odd) .box-image {
   margin-right: 1rem;
   float: left;
@@ -368,15 +369,16 @@ section {
   margin-left: 1rem;
   float: right;
 } */
-
+.box-image {
+  align-self: center;
+}
 .box-image img {
-  width: 450px;
-  /* width: 100%; */
+  width: 350px;
   height: 300px;
 }
-.box-txt {
+/* .box-txt {
   background-color: rgba(223, 191, 132, 0.39);
-}
+} */
 /* .box-portfolio:nth-child(even) .box-txt h3 {
   text-align: right;
 } */
