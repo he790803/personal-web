@@ -2,7 +2,10 @@
   font-family: naikaifont;
   src: url(./fonts/NaikaiFont-Regular.woff);
 }
-
+@font-face {
+  font-family: openhuninn;
+  src: url(./fonts/jf-openhuninn-1.1.ttf);
+}
 :root {
   --main-color: #e38528;
   /* --main-color: #5398be; */
@@ -12,7 +15,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: naikaifont;
+  font-family: openhuninn;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: capitalize;
@@ -182,6 +185,7 @@ section {
 .home .content .hi {
   font-size: 2rem;
   color: var(--main-color);
+  text-transform: none;
 }
 
 .home .content h3 {
