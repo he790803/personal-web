@@ -2,10 +2,7 @@
   font-family: naikaifont;
   src: url(./fonts/NaikaiFont-Regular.woff);
 }
-@font-face {
-  font-family: notoSansTC;
-  src: url(./fonts/NotoSerifTC-Black.otf);
-}
+
 :root {
   --main-color: #e38528;
   /* --main-color: #5398be; */
@@ -15,7 +12,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  /* font-family: notoSansTC; */
+  font-family: naikaifont;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: capitalize;
