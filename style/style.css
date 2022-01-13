@@ -1,8 +1,4 @@
 @font-face {
-  font-family: naikaifont;
-  src: url(./fonts/NaikaiFont-Regular.woff);
-}
-@font-face {
   font-family: openhuninn;
   src: url(./fonts/jf-openhuninn-1.1.ttf);
 }
@@ -291,7 +287,7 @@ section {
   /* display: flex; */
   /* flex-wrap: wrap; */
   /* gap: 30rem; */
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 3rem;
 }
 
 .about .row-1 .content .box-container .box {
@@ -302,6 +298,11 @@ section {
   flex-basis: 20rem;
   /* 元件的基準值 */
 }
+
+.about .row-1 .content .box-container .work:first-child {
+  padding-bottom: 2rem;
+}
+
 .about .row-1 .content .box-container .work span {
   color: var(--main-color);
 }
@@ -401,6 +402,20 @@ section {
   font-size: 1.8rem;
   padding: 1.5rem;
   font-weight: 500;
+}
+.inline-content {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  font-weight: 500;
+}
+.inline-flex {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+}
+.inline-content .inline-flex p {
+  padding: 0 0 1.5rem;
 }
 @media screen and (max-width: 991px) {
   html {
