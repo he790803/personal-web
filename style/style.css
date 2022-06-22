@@ -358,52 +358,46 @@ section {
 
 .box-portfolio {
   margin: 5rem 0;
-  display: flex;
+  /* display: flex; */
   background-color: rgba(223, 191, 132, 0.39);
 }
-
-/* .box-portfolio .box-image {
-  margin-right: 1rem;
-  float: left;
-} */
-/* .box-portfolio:nth-child(odd) .box-image {
-  margin-right: 1rem;
-  float: left;
-}
-.box-portfolio:nth-child(even) .box-image {
-  margin-left: 1rem;
-  float: right;
-} */
-.box-image {
-  align-self: center;
-  width: 40%;
-  height: 100%;
-}
-.box-image img {
-  /* width: 350px; */
-  height: 300px;
-  width: 100%;
-}
-.box-txt {
-  width: 60%;
-}
-/* .box-txt {
-  background-color: rgba(223, 191, 132, 0.39);
-} */
-/* .box-portfolio:nth-child(even) .box-txt h3 {
-  text-align: right;
-} */
-.box-txt h3 {
+.box-portfolio .box-title h3 {
   font-size: 2.2rem;
   padding: 1.5rem;
 }
-.box-content {
-  min-height: 300px;
+.box-group {
+  display: flex;
 }
-.box-content span {
+.box-image {
+  /* align-self: center; */
+  width: 50%;
+  min-height: 400px;
+  padding-bottom: 2rem;
+}
+.box-image img {
+  /* width: 350px; */
+  /* height: 300px; */
+  height: 100%;
+  width: 100%;
+}
+.box-txt {
+  width: 50%;
+}
+/* .box-txt  h3 {
+  font-size: 2.2rem;
+  padding: 1.5rem;
+} */
+.box-content {
+  min-height: 400px;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+}
+/* .box-content span {
   color: var(--main-color);
   font-size: 2.2rem;
-}
+} */
 .box-content p {
   font-size: 1.8rem;
   padding: 1.5rem;
@@ -455,6 +449,27 @@ section {
     background-position: 300%;
   }
 }
+@media screen and (max-width: 1500px) {
+  .box-group {
+    flex-direction: column;
+  }
+  .box-image,
+  .box-txt {
+    width: 100%;
+  }
+  .box-image {
+    min-height: auto;
+  }
+  .box-content {
+    min-height: auto;
+  }
+  .box-image img {
+    /* width: 450px; */
+    width: 100%;
+    vertical-align: middle;
+    /* height: 280px; */
+  }
+}
 @media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -476,28 +491,13 @@ section {
   .cursor-2 {
     display: none;
   }
-  .box-portfolio {
-    display: flex;
-    flex-direction: column;
-  }
-  .box-portfolio:nth-child(even) .box-image,
+
+  /* .box-portfolio:nth-child(even) .box-image,
   .box-portfolio:nth-child(odd) .box-image {
     float: none;
     width: 100%;
     margin: 0;
-    /* display: flex; */
-    /* width: 500px; */
-  }
-  .box-image,
-  .box-txt {
-    width: 100%;
-  }
-  .box-image img {
-    /* width: 450px; */
-    width: 100%;
-    vertical-align: middle;
-    /* height: 280px; */
-  }
+  } */
 }
 
 @media screen and (max-width: 450px) {
