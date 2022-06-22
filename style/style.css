@@ -381,7 +381,7 @@ section {
 }
 .box-image img {
   /* width: 350px; */
-  /* height: 300px; */
+  height: 300px;
   width: 100%;
 }
 .box-txt {
